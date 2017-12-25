@@ -99,6 +99,16 @@ public class Graph<T> {
 		return allVertexes.values();
 	}
 
+	@Override
+	public String toString() {
+		StringBuffer buffer = new StringBuffer();
+		for (Edge<T> edge : getAllEdges()) {
+			buffer.append(edge.getVertex1() + " " + edge.getVertex2() + " " + edge.getWeight());
+			buffer.append("\n");
+		}
+		return buffer.toString();
+	}
+
 }
 
 @SuppressWarnings("rawtypes")
@@ -162,6 +172,10 @@ class Vertex<T> {
 		if (id != other.id)
 			return false;
 		return true;
+	}
+
+	public String toString() {
+		return String.valueOf(id);
 	}
 
 }
