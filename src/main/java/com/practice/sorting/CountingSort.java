@@ -5,6 +5,7 @@ package com.practice.sorting;
 
 /**
  * @author swamygorli
+ * This will work for only non-negative Integers
  *
  */
 public class CountingSort {
