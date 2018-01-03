@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.practice.array;
+package com.practice.arrays;
 
 /**
  * @author swamygorli 
